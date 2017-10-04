@@ -1,0 +1,4 @@
+C:\Repos\RandomUtilities\RandomUtilities\bin\Debug\RandomUtilities.dll
+C:\Repos\RandomUtilities\RandomUtilities\bin\Debug\RandomUtilities.pdb
+C:\Repos\RandomUtilities\RandomUtilities\obj\Debug\RandomUtilities.dll
+C:\Repos\RandomUtilities\RandomUtilities\obj\Debug\RandomUtilities.pdb

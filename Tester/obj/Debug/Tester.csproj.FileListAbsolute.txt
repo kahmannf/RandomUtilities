@@ -1,0 +1,6 @@
+C:\Repos\RandomUtilities\Tester\bin\Debug\Tester.exe.config
+C:\Repos\RandomUtilities\Tester\bin\Debug\Tester.exe
+C:\Repos\RandomUtilities\Tester\bin\Debug\Tester.pdb
+C:\Repos\RandomUtilities\Tester\obj\Debug\Tester.csprojResolveAssemblyReference.cache
+C:\Repos\RandomUtilities\Tester\obj\Debug\Tester.exe
+C:\Repos\RandomUtilities\Tester\obj\Debug\Tester.pdb
