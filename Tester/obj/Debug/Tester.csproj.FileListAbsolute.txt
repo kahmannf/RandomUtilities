@@ -4,3 +4,6 @@ C:\Repos\RandomUtilities\Tester\bin\Debug\Tester.pdb
 C:\Repos\RandomUtilities\Tester\obj\Debug\Tester.csprojResolveAssemblyReference.cache
 C:\Repos\RandomUtilities\Tester\obj\Debug\Tester.exe
 C:\Repos\RandomUtilities\Tester\obj\Debug\Tester.pdb
+C:\Repos\RandomUtilities\Tester\bin\Debug\RandomUtilities.dll
+C:\Repos\RandomUtilities\Tester\bin\Debug\RandomUtilities.pdb
+C:\Repos\RandomUtilities\Tester\obj\Debug\Tester.csproj.CoreCompileInputs.cache
