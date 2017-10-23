@@ -70,6 +70,10 @@
     <Compile Include="Queue\QueueAccessCommand.cs" />
     <Compile Include="Queue\QueueAccessResult.cs" />
     <Compile Include="Queue\QueueItem.cs" />
+    <Compile Include="Serialization\CSV\ColumnMapper.cs" />
+    <Compile Include="Serialization\CSV\CSVReader.cs" />
+    <Compile Include="Serialization\IDataReader.cs" />
+    <Compile Include="Serialization\IDataWriter.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
