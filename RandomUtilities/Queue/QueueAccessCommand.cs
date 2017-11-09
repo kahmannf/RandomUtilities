@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RandomUtilities.Queue
 {
-    enum QueueAccesTypes { Push, Pull, Peek, Clear }
+    enum QueueAccesTypes { Push, Pull, Peek, PeekAll, Clear }
     class QueueAccessCommand<T>
     {
         private QueueAccesTypes clear;
