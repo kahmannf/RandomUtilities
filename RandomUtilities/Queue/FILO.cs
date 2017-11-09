@@ -70,6 +70,20 @@ namespace RandomUtilities.Queue
                 return result.Item;
             }
         }
+        
+        public T[] PeekAll()
+        {
+            QueueAccessResult<T> result = PerformOperation(new QueueAccessCommand<T>(QueueAccesTypes.PeekAll));
+            
+            if (!result.WasSuccessful)
+            {
+                throw GetExceptionFromResult(result);
+            }
+            else
+            {
+                return result.Items;
+            }
+        }
 
         public T Pull()
         {
@@ -195,6 +209,26 @@ namespace RandomUtilities.Queue
                                     result.Item = _lastItem.Content;
                                     result.WasSuccessful = true;
                                 }
+                                break;
+
+                                #endregion
+                            case QueueAccesTypes.Clear:
+                                #region PeekAll
+
+                                List<T> allItems = new List<T>();
+                                
+                                QueueItem<T> currentItem = _lastItem;
+                                
+                                while(currentItem != null)
+                                {
+                                    allItems.Add(currentItem.Content);
+                                    currentItem = currentItem.RelatedItem;
+                                }
+                                
+                                result.Items = allItems.ToArray();
+
+                                result.WasSuccessful = true;
+
                                 break;
 
                                 #endregion
