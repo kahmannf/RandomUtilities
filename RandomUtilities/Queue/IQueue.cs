@@ -15,6 +15,7 @@ namespace RandomUtilities.Queue
         T Pull();
         T Peek();
         T[] Clear();
+        T[] PeekAll();
         void Push(T item);
 
         int Count();
