@@ -212,20 +212,20 @@ namespace RandomUtilities.Queue
                                 break;
 
                                 #endregion
-                            case QueueAccesTypes.Clear:
+                            case QueueAccesTypes.PeekAll:
                                 #region PeekAll
 
-                                List<T> allItems = new List<T>();
+                                List<T> allItemsPeek = new List<T>();
                                 
                                 QueueItem<T> currentItem = _lastItem;
                                 
                                 while(currentItem != null)
                                 {
-                                    allItems.Add(currentItem.Content);
+                                    allItemsPeek.Add(currentItem.Content);
                                     currentItem = currentItem.RelatedItem;
                                 }
                                 
-                                result.Items = allItems.ToArray();
+                                result.Items = allItemsPeek.ToArray();
 
                                 result.WasSuccessful = true;
 
