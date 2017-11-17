@@ -108,6 +108,8 @@ namespace RandomUtilities.Queue
                 throw GetExceptionFromResult(result);
             }
         }
+        
+        object threadLock = new object();
 
         private QueueItem<T> _firstItem;
         private QueueItem<T> _lastItem;
@@ -152,7 +154,6 @@ namespace RandomUtilities.Queue
             }
             else
             {
-                object threadLock = new object();
                 lock (threadLock)
                 {
                     try
